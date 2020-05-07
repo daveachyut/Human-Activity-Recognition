@@ -1,21 +1,31 @@
 # Human-Activity-Recognition
-This project involves Human Activity Recognition and Tracking through Samsung Galaxy Gear S2 data. I had been given 6 features from the tracker, and had to use them to classify the data into six types of activities by unsupervised machine learning methods.
+This project involves Human Activity Recognition and Tracking through Samsung Galaxy Gear S2 data. I had been given 6 features from the
+tracker, and had to use them to classify the data into six types of activities by unsupervised machine learning methods.
 
 
 5 Some Initial Data Exploration
-We first study the distribution of the (time-averaged) values of the triaxial accelerometer and gyroscope. We will look at the distribution of these data.
+We first study the distribution of the (time-averaged) values of the triaxial accelerometer and gyroscope. We will look at the
+distribution of these data.
 Assignment [15 + 15]
-1. Compute the density plot (histogram) of the X, Y and Z coordinates of the mean body acceleration when the subject is lying on a horizontal position (condition incorrectly called LAYING) (see Fig. 1).
-You will notice that while the subject is resting in a horizontal position, the X and Z components of the acceleration are not zero (See Fig. 1). This is because the triaxial accelerometer is measuring any deviation of the sensor created by a force. In the presence of gravity, the accelerometer is measuring the earth gravity. The component affected by gravity are related to the orientation of the smartphone with respect to the direction of the gravitational force.
+1. Compute the density plot (histogram) of the X, Y and Z coordinates of the mean body acceleration when the subject is lying on a
+horizontal position (condition incorrectly called LAYING) (see Fig. 1).
+You will notice that while the subject is resting in a horizontal position, the X and Z components of the acceleration are not zero
+(See Fig. 1). This is because the triaxial accelerometer is measuring any deviation of the sensor created by a force. In the presence of
+gravity, the accelerometer is measuring the earth gravity. The component affected by gravity are related to the orientation of the
+smartphone with respect to the direction of the gravitational force.
      
 ![](images/902-_.png)
-Figure 1.a : Density plot of the linear acceleration while lying down. Each column corresponds to one coordinate (X,Y, and Z from left to right).
+Figure 1.a : Density plot of the linear acceleration while lying down. Each column corresponds to one coordinate (X,Y, and Z from left to
+right).
 
      
 ![](images/902-_.png)
-Figure 1.b : Density plot of the linear acceleration while walking up. Each column corresponds to one coordinate (X,Y, and Z from left to right).
+Figure 1.b : Density plot of the linear acceleration while walking up. Each column corresponds to one coordinate (X,Y, and Z from left to
+right).
 
-2. Repeat the previous question using the three gyroscope measurements (X,Y and Z) (see Fig. 2). Again, you will notice that none of the components of the angular velocity are exactly zero while the subject is resting in a horizontal position (see Fig. 2). This small offset of the resting position shall not affect the classification.
+2. Repeat the previous question using the three gyroscope measurements (X,Y and Z) (see Fig. 2). Again, you will notice that none of the
+components of the angular velocity are exactly zero while the subject is resting in a horizontal position (see Fig. 2). This small offset
+of the resting position shall not affect the classification.
 
      
 ![](images/902-_.png)
@@ -23,19 +33,26 @@ Figure 2.a : Density plot of angular velocity lying down. Each column correspond
 
      
 ![](images/902-_.png)
-Figure 2.b : Density plot of angular velocity walking upstairs. Each column corresponds to one coordinate (X,Y, and Z from left to right).
+Figure 2.b : Density plot of angular velocity walking upstairs. Each column corresponds to one coordinate (X,Y, and Z from left to
+right).
 
 5.1 The Coupling between the Sensor Measurements: The Linear Part
-We propose to compute the amount of coupling between the different measurements. Since the 561 are all derived from a set of six measurements (three components of linear acceleration and three components of angular velocity), we expect that all the measurements be highly correlated.
+We propose to compute the amount of coupling between the different measurements. Since the 561 are all derived from a set of six
+measurements (three components of linear acceleration and three components of angular velocity), we expect that all the measurements be
+highly correlated.
 Assignment [30]
-3. Compute the correlation matrix for the train dataset formed by the 7352  561 matrix. Display the correlation matrix as a heatmap (see Fig. 3). What do you conclude?
+3. Compute the correlation matrix for the train dataset formed by the 7352  561 matrix. Display the correlation matrix as a heatmap (see
+Fig. 3). What do you conclude?
 
  
 ![](images/902-_.png)
-Figure 3: Sample correlation matrix of the 561 measurement. The correlation matrix is computed using the 7,352 rows of measurements, across the different subjects.
+Figure 3: Sample correlation matrix of the 561 measurement. The correlation matrix is computed using the 7,352 rows of measurements,
+across the different subjects.
 
 6 Classification of the Activities using a Support Vector Machine
-We begin our study of the recognition of human activity with a support vector machine. We confirmed that many of the 561 variables are correlated, and therefore the dataset may not be linearly separable. We propose to use a Gaussian radial kernel, and introduce a regularization term, , that scales the penalization of the slack terms. You will optimize  using the validation (test) set.
+We begin our study of the recognition of human activity with a support vector machine. We confirmed that many of the 561 variables are
+correlated, and therefore the dataset may not be linearly separable. We propose to use a Gaussian radial kernel, and introduce a
+regularization term, , that scales the penalization of the slack terms. You will optimize  using the validation (test) set.
 Assignment [90 = 40 + 40 + 10]
 Train a support vector machine (SVM) classifier using the training data. You will use a Gaussian kernel.
 You will use the test (validation) data to optimize the regularization parameter, , via cross-validation.
@@ -45,7 +62,8 @@ You will use the test (validation) data to optimize the regularization parameter
 ![](images/902-_.png)
 Figure 4: Lambda vs Residual Sum of Squares.
 
-5. Apply the SVM classifier on the test data, and compute the confusion matrix to report the number of activities in class i that were classified as class j (see Table 1.) You will use the optimal regularization parameter,  .
+5. Apply the SVM classifier on the test data, and compute the confusion matrix to report the number of activities in class i that were
+classified as class j (see Table 1.) You will use the optimal regularization parameter,  .
 
 accuracy
 [1] 96.337
@@ -99,7 +117,9 @@ mis_walking_up
 This shows that misclassification rate is the lowest for laying and the highest for walking down.
 
 6.1 The Geometry of the Different Activities Combined
-We explore the question of linear separability in this section. We propose to visualize the accelerometer dataset, 􀀀! a ¹tº during all the activities. We color-code each point according to the activity (see Figs. 4 and 5). The scatterplot illustrates the fact that the different activities form intricate patterns that do not appear to be linearly separable.
+We explore the question of linear separability in this section. We propose to visualize the accelerometer dataset, 􀀀! a ¹tº during all
+the activities. We color-code each point according to the activity (see Figs. 4 and 5). The scatterplot illustrates the fact that the
+different activities form intricate patterns that do not appear to be linearly separable.
 
 Assignment [100 = 20+10+20+10]
 7. Use the three coordinates (X,Y,Z) provided by the body linear acceleration 􀀀! a T ¹tº   
@@ -112,15 +132,18 @@ package scatterplot3d. In python, you can use the mpl_toolkit mplot3d from matpl
 
  
 ![](images/902-_.png)
-Figure 5.a : N   7, 352 observations of the vector of linear body acceleration 􀀀! a ¹tº. The color of the point encodes the activity performed at the time when the measurement was taken.
+Figure 5.a : N   7, 352 observations of the vector of linear body acceleration 􀀀! a ¹tº. The color of the point encodes the activity
+performed at the time when the measurement was taken.
 
  
 ![](images/902-_.png)
-Figure 5.b : N   7, 352 observations of the vector of linear body acceleration 􀀀! a ¹tº. The color of the point encodes the activity performed at the time when the measurement was taken.
+Figure 5.b : N   7, 352 observations of the vector of linear body acceleration 􀀀! a ¹tº. The color of the point encodes the activity
+performed at the time when the measurement was taken.
 
  
 ![](images/902-_.png)
-Figure 5.c : N   7, 352 observations of the vector of linear body acceleration 􀀀! a ¹tº. The color of the point encodes the activity performed at the time when the measurement was taken.
+Figure 5.c : N   7, 352 observations of the vector of linear body acceleration 􀀀! a ¹tº. The color of the point encodes the activity
+performed at the time when the measurement was taken.
 
 8. Can you visually distinguish some activities (e.g., sitting)? Justify your answer, based on the type of activity:
 static (SITTING, STANDING,LAYING) vs dynamic (WALKING,WALKING_UPSTAIRS,
@@ -130,11 +153,13 @@ From the above plots, no. The reasons are explained below:
 
      
 ![](images/902-_.png)
-Figure 6.a : Density plot of the linear acceleration for static activities. Each column corresponds to one coordinate (X,Y, and Z from left to right).
+Figure 6.a : Density plot of the linear acceleration for static activities. Each column corresponds to one coordinate (X,Y, and Z from
+left to right).
 
      
 ![](images/902-_.png)
-Figure 6.b : Density plot of the linear acceleration for non static activities. Each column corresponds to one coordinate (X,Y, and Z from left to right).
+Figure 6.b : Density plot of the linear acceleration for non static activities. Each column corresponds to one coordinate (X,Y, and Z
+from left to right).
 
 Key thing to note is that means for all activities are almost same.
 
@@ -163,15 +188,18 @@ to display a three-dimensional scatterplot of the training data (see Fig. 5).
 
  
 ![](images/902-_.png)
-Figure 7.a : N   7, 352 observations of the vector of linear body angular velocity 􀀀! a ¹tº. The color of the point encodes the activity performed at the time when the measurement was taken.
+Figure 7.a : N   7, 352 observations of the vector of linear body angular velocity 􀀀! a ¹tº. The color of the point encodes the activity
+performed at the time when the measurement was taken.
 
  
 ![](images/902-_.png)
-Figure 7.b : N   7, 352 observations of the vector of linear body angular velocity 􀀀! a ¹tº. The color of the point encodes the activity performed at the time when the measurement was taken.
+Figure 7.b : N   7, 352 observations of the vector of linear body angular velocity 􀀀! a ¹tº. The color of the point encodes the activity
+performed at the time when the measurement was taken.
 
  
 ![](images/902-_.png)
-Figure 7.c : N   7, 352 observations of the vector of linear body angular velocity 􀀀! a ¹tº. The color of the point encodes the activity performed at the time when the measurement was taken.
+Figure 7.c : N   7, 352 observations of the vector of linear body angular velocity 􀀀! a ¹tº. The color of the point encodes the activity
+performed at the time when the measurement was taken.
 
 10. Can you visually distinguish some activities? What are the coordinates of the sitting activities?
 
