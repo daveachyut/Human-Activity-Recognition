@@ -239,10 +239,10 @@ summary.all.variables(gyro_t_standing[1:3])
 Figure 8.d : Density plot of angular velocity walking. Each column corresponds to one coordinate (X,Y, and Z from left to right).
 
 summary.all.variables(gyro_t_walking[1:3])
-                    dv.name    n       mean         	var 		g3.skewness     g4.kurtosis
-1 tBodyAccmeanX 	1226   -0.03125331 	0.016429981  -0.9132899 	8.040476
-2 tBodyAccmeanY 	1226   -07131259 	0.008383257  1.1579990 	5.256484
-3 tBodyAccmeanZ 	1226    0.08419440 	0.005662242   -1.0712582 	11.767728
+                    dv.name   n       mean         	var 		g3.skewness     g4.kurtosis
+1 tBodyAccmeanX 	1226   -0.03125331 	     0.016429981    -0.9132899 	     8.040476
+2 tBodyAccmeanY 	1226   -07131259 	     0.008383257    1.1579990 	     5.256484
+3 tBodyAccmeanZ 	1226    0.08419440 	     0.005662242    -1.0712582 	     11.767728
 
               
 ![](images/902-_.png)
