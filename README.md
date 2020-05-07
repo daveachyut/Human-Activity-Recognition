@@ -250,11 +250,11 @@ Figure 8.e : Density plot of angular velocity walking upstairs. Each column corr
 
 summary.all.variables(gyro_t_walking_down[1:3])
 
-|  |---:  dv.name  |  n  |     mean     |   	var 	  |	g3.skewness |    g4.kurtosis |
-|  |---:	        |---: |---:	         |---:	       |---:	      |---:             |
-|1 | tBodyAccmeanX |	986 | -0.0766236   | 0.10519933 |   0.1428550 |	   -0.8198465 |
-|2 | tBodyAccmeanY |	986 |  -0.05590992 | 0.03515019 |   0.1311227 |	   0.3481811  |
-|3 | tBodyAccmeanZ |	986 |   0.09392529 |0.02498519  |   0.1289896 |	   3.2828298  |
+|---:  dv.name  |  n    |     mean     |   	var 	  |	g3.skewness|    g4.kurtosis  |
+|---:	      |---:   |---:	         |---:	       |---:	      |---:             |
+| tBodyAccmeanX |	986 | -0.0766236   | 0.10519933 |   0.1428550 |	   -0.8198465 |
+| tBodyAccmeanY |	986 |  -0.05590992 | 0.03515019 |   0.1311227 |	   0.3481811  |
+| tBodyAccmeanZ |	986 |   0.09392529 |0.02498519  |   0.1289896 |	   3.2828298  |
 
          
 ![](images/902-_.png)
