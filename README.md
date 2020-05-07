@@ -166,16 +166,18 @@ Key thing to note is that means for all activities are almost same.
 Which leads us to further statistical investigation:
 
 summary.all.variables(acc_t_static[1:3])
-                    dv.name    n       mean         	var 		g3.skewness     g4.kurtosis
-1 tBodyAccmeanX 	4067   0.27395052 	0.004276742  -7.5917236 	120.8661
-2 tBodyAccmeanY 	4067   -0.01563321 	0.002314875  -0.4131948 	160.7371
-3 tBodyAccmeanZ 	4067    -0.10703716 	0.003864128   2.6359910 	105.4638
+|       dv.name |   n    |      mean     |        	var |		g3.skewness |    g4.kurtosis |
+|---:	      |---:	|---:	      |---:	         |---:	                 |---:            |
+| tBodyAccmeanX |	4067 |  0.27395052   |	0.004276742   | -7.5917236           |	120.8661      |
+| tBodyAccmeanY |	4067 |  -0.01563321  |	0.002314875   | -0.4131948           |	160.7371      |
+| tBodyAccmeanZ |	4067 |   -0.10703716 |	0.003864128   |  2.6359910           |	105.4638      |
 
 summary.all.variables(acc_t_non_static[1:3])
-                    dv.name    n       mean         	var 		g3.skewness     g4.kurtosis
-1 tBodyAccmeanX 	3285   0.27515370 	0.0057544114  -0.1190463 	0.9943328
-2 tBodyAccmeanY 	3285   -0.02024856 	0.0008502104  -0.6280562 	2.7974929
-3 tBodyAccmeanZ 	3285    -0.11174571 	0.0023833210   -0. 5994068 	3.6330838
+|       dv.name |   n    |      mean     |        	var |		g3.skewness |    g4.kurtosis |
+|---:	      |---:	|---:	      |---:	         |---:	                 |---:            |
+| tBodyAccmeanX |	3285 |  0.27515370   |	0.0057544114  | -0.1190463           |	0.9943328     |
+| tBodyAccmeanY |	3285 |  -0.02024856  |	0.0008502104  | -0.6280562           |	2.7974929     |
+| tBodyAccmeanZ |	3285 |   -0.11174571 |	0.0023833210  |  -0. 5994068         |	3.6330838     |
 
 The variances look similar too. The only statistical measure which can successfully separate static from non static seems to be Kurtosis.
 
@@ -210,39 +212,43 @@ From the above plots, no. The reasons are explained below:
 Figure 8.a : Density plot of angular velocity sitting. Each column corresponds to one coordinate (X,Y, and Z from left to right).
 
 summary.all.variables(gyro_t_sitting[1:3])
-                    dv.name    n       mean         	var 		g3.skewness     g4.kurtosis
-1 tBodyAccmeanX 	1286   0.03783059 	0.001974668  -3.350336 	17.26936
-2 tBodyAccmeanY 	1286   -0.07280278 	0.008921608  -3.241138 	27.62308
-3 tBodyAccmeanZ 	1286    -0.07847421 	0.016648599   -2.600225 	13.14961
+|       dv.name |   n    |      mean     |        	var |		g3.skewness |    g4.kurtosis |
+|---:	      |---:	|---:	      |---:	         |---:	                 |---:            |
+| tBodyAccmeanX |	1286 |  0.03783059   |	0.001974668   | -3.350336            |	17.26936      |
+| tBodyAccmeanY |	1286 |  -0.07280278  |	0.008921608   | -3.241138            |	27.62308      |
+| tBodyAccmeanZ |	1286 |   -0.07847421 |	0.016648599   |  -2.600225           |	13.14961      |
 
 ![](images/902-_.png)     
 Figure 8.b : Density plot of angular velocity lying down. Each column corresponds to one coordinate (X,Y, and Z from left to right).
 
 summary.all.variables(gyro_t_laying[1:3])
-                    dv.name    n       mean         	var 		g3.skewness     g4.kurtosis
-1 tBodyAccmeanX 	1407   -0.01676119 	0.003655170  1.840969 	16.38695
-2 tBodyAccmeanY 	1407   -0.09166082 	0.007879606  -2.979016 	15.90234
-3 tBodyAccmeanZ 	1407    0.12714792 	0.020343363   2.843176 	10.67111
+|       dv.name |   n    |      mean    |        	var    |		g3.skewness |    g4.kurtosis |
+|---:	      |---:	|---:	     |---:	       |---:	            |---:            |
+| tBodyAccmeanX |	1407 |  -0.01676119 |	0.003655170 | 1.840969          |	16.38695      |
+| tBodyAccmeanY |	1407 |  -0.09166082 |	0.007879606 | -2.979016         |	15.90234      |
+| tBodyAccmeanZ |	1407 |   0.12714792 |	0.020343363 |  2.843176         |	10.67111      |
 
       
 ![](images/902-_.png)
 Figure 8.c : Density plot of angular velocity standing. Each column corresponds to one coordinate (X,Y, and Z from left to right).
 
 summary.all.variables(gyro_t_standing[1:3])
-                    dv.name    n       mean         	var 		g3.skewness     g4.kurtosis
-1 tBodyAccmeanX 	1374   -0.02632320 	0.0006619619  1.940342 	36.95479
-2 tBodyAccmeanY 	1374   -0.06607461 	0.0033506525  3.984828 	24.78807
-3 tBodyAccmeanZ 	1374    -0.07877825 	0.0022843271   -3.781508 	23.15011
+|        dv.name |   n   |      mean     |        	var |		g3.skewness |    g4.kurtosis |
+|---:	       |---:	|---:	      |---:	         |---:	                 |---:            |
+| tBodyAccmeanX  |	1374 |  -0.02632320  |	0.0006619619  | 1.940342             |	36.95479      |
+| tBodyAccmeanY  |	1374 |  -0.06607461  |	0.0033506525  | 3.984828             |	24.78807      |
+| tBodyAccmeanZ  |	1374 |   -0.07877825 |	0.0022843271  |  -3.781508           |	23.15011      |
 
      
 ![](images/902-_.png)     
 Figure 8.d : Density plot of angular velocity walking. Each column corresponds to one coordinate (X,Y, and Z from left to right).
 
 summary.all.variables(gyro_t_walking[1:3])
-                    dv.name   n       mean         	var 		g3.skewness     g4.kurtosis
-1 tBodyAccmeanX 	1226   -0.03125331 	     0.016429981    -0.9132899 	     8.040476
-2 tBodyAccmeanY 	1226   -07131259 	     0.008383257    1.1579990 	     5.256484
-3 tBodyAccmeanZ 	1226    0.08419440 	     0.005662242    -1.0712582 	     11.767728
+|       dv.name |  n     |      mean    |        	var         |		g3.skewness |    g4.kurtosis  |
+|---:	      |---:	|---:	     |---:	            |---:	            |---:             |
+| tBodyAccmeanX |	1226 |  -0.03125331 |	     0.016429981 |   -0.9132899      |	     8.040476  |
+| tBodyAccmeanY |	1226 |  -07131259   |	     0.008383257 |   1.1579990       |	     5.256484  |
+| tBodyAccmeanZ |	1226 |   0.08419440 |	     0.005662242 |   -1.0712582      |	     11.767728 |
 
               
 ![](images/902-_.png)
@@ -261,7 +267,9 @@ summary.all.variables(gyro_t_walking_down[1:3])
 Figure 8.f : Density plot of angular velocity walking upstairs. Each column corresponds to one coordinate (X,Y, and Z from left to right).
 
 summary.all.variables(acc_t_non_static[1:3])
-                    dv.name    n       mean         	var 		g3.skewness     g4.kurtosis
-1 tBodyAccmeanX 	3285   0.27515370 	0.0057544114  -0.1190463 	0.9943328
-2 tBodyAccmeanY 	3285   -0.02024856 	0.0008502104  -0.6280562 	2.7974929
-3 tBodyAccmeanZ 	3285    -0.11174571 	0.0023833210   -0. 5994068 	3.6330838
+
+|       dv.name |   n    |      mean     |        var     |	g3.skewness  |g4.kurtosis |
+|---:	      |---:	|---:	      |---:	        |---:	        |---:        |
+| tBodyAccmeanX |	3285 |  0.27515370   |	0.0057544114 | -0.1190463   |	0.9943328  |
+| tBodyAccmeanY |	3285 |  -0.02024856  |	0.0008502104 | -0.6280562   |	2.7974929  |
+| tBodyAccmeanZ |	3285 |   -0.11174571 |	0.0023833210 |  -0. 5994068 |	3.6330838  |
