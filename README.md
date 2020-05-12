@@ -19,9 +19,7 @@ smartphone with respect to the direction of the gravitational force.
 Figure 1.a : Density plot of the linear acceleration while lying down. Each column corresponds to one coordinate (X,Y, and Z from left to right).
 
      
-![](images/4.png)
-![](images/5.png)
-![](images/6.png)
+<img src="images/4.png" width="300" height="300">  <img src="images/5.png" width="300" height="300">     <img src="images/6.png" width="300" height="300">
 
 Figure 1.b : Density plot of the linear acceleration while walking up. Each column corresponds to one coordinate (X,Y, and Z from left to right).
 
@@ -30,16 +28,12 @@ components of the angular velocity are exactly zero while the subject is resting
 of the resting position shall not affect the classification.
 
      
-![](images/7.png)
-![](images/8.png)
-![](images/9.png)
+<img src="images/7.png" width="300" height="300">  <img src="images/8.png" width="300" height="300">     <img src="images/9.png" width="300" height="300">
 
 Figure 2.a : Density plot of angular velocity lying down. Each column corresponds to one coordinate (X,Y, and Z from left to right).
 
      
-![](images/10.png)
-![](images/11.png)
-![](images/12.png)
+<img src="images/10.png" width="300" height="300">  <img src="images/11.png" width="300" height="300">     <img src="images/12.png" width="300" height="300">
 
 Figure 2.b : Density plot of angular velocity walking upstairs. Each column corresponds to one coordinate (X,Y, and Z from left to
 right).
@@ -165,17 +159,13 @@ WALKING_DOWNSTAIRS).
 From the above plots, no. The reasons are explained below:
 
      
-![](images/18.png)
-![](images/19.png)
-![](images/20.png)
+<img src="images/18.png" width="300" height="300">  <img src="images/19.png" width="300" height="300">     <img src="images/20.png" width="300" height="300">
 
 Figure 6.a : Density plot of the linear acceleration for static activities. Each column corresponds to one coordinate (X,Y, and Z from
 left to right).
 
      
-![](images/21.png)
-![](images/22.png)
-![](images/23.png)
+<img src="images/21.png" width="300" height="300">  <img src="images/22.png" width="300" height="300">     <img src="images/23.png" width="300" height="300">
 
 Figure 6.b : Density plot of the linear acceleration for non static activities. Each column corresponds to one coordinate (X,Y, and Z
 from left to right).
@@ -230,9 +220,7 @@ performed at the time when the measurement was taken.
 From the above plots, no. The reasons are explained below:
 
      
-![](images/27.png)     
-![](images/28.png)
-![](images/29.png)
+<img src="images/27.png" width="300" height="300">  <img src="images/28.png" width="300" height="300">     <img src="images/29.png" width="300" height="300">
 
 Figure 8.a : Density plot of angular velocity sitting. Each column corresponds to one coordinate (X,Y, and Z from left to right).
 
@@ -243,9 +231,7 @@ summary.all.variables(gyro_t_sitting[1:3])
 | tBodyAccmeanY |	1286 |  -0.07280278  |	0.008921608   | -3.241138            |	27.62308      |
 | tBodyAccmeanZ |	1286 |   -0.07847421 |	0.016648599   |  -2.600225           |	13.14961      |
 
-![](images/30.png)     
-![](images/31.png)
-![](images/32.png)
+<img src="images/30.png" width="300" height="300">  <img src="images/31.png" width="300" height="300">     <img src="images/32.png" width="300" height="300">
 
 Figure 8.b : Density plot of angular velocity lying down. Each column corresponds to one coordinate (X,Y, and Z from left to right).
 
@@ -257,9 +243,7 @@ summary.all.variables(gyro_t_laying[1:3])
 | tBodyAccmeanZ |	1407 |   0.12714792 |	0.020343363 |  2.843176         |	10.67111      |
 
       
-![](images/33.png)
-![](images/34.png)
-![](images/35.png)
+<img src="images/33.png" width="300" height="300">  <img src="images/34.png" width="300" height="300">     <img src="images/35.png" width="300" height="300">
 
 Figure 8.c : Density plot of angular velocity standing. Each column corresponds to one coordinate (X,Y, and Z from left to right).
 
@@ -271,9 +255,7 @@ summary.all.variables(gyro_t_standing[1:3])
 | tBodyAccmeanZ  |	1374 |   -0.07877825 |	0.0022843271  |  -3.781508           |	23.15011      |
 
      
-![](images/36.png)     
-![](images/37.png)
-![](images/38.png)
+<img src="images/36.png" width="300" height="300">  <img src="images/37.png" width="300" height="300">     <img src="images/38.png" width="300" height="300">
 
 Figure 8.d : Density plot of angular velocity walking. Each column corresponds to one coordinate (X,Y, and Z from left to right).
 
@@ -285,9 +267,7 @@ summary.all.variables(gyro_t_walking[1:3])
 | tBodyAccmeanZ |	1226 |   0.08419440 |	     0.005662242 |   -1.0712582      |	     11.767728 |
 
               
-![](images/39.png)
-![](images/40.png)
-![](images/41.png)
+<img src="images/39.png" width="300" height="300">  <img src="images/40.png" width="300" height="300">     <img src="images/41.png" width="300" height="300">
 
 Figure 8.e : Density plot of angular velocity walking upstairs. Each column corresponds to one coordinate (X,Y, and Z from left to right).
 
@@ -300,9 +280,7 @@ summary.all.variables(gyro_t_walking_down[1:3])
 | tBodyAccmeanZ |	986 |   0.09392529 |0.02498519  |   0.1289896 |	   3.2828298  |
 
          
-![](images/42.png)
-![](images/43.png)
-![](images/44.png)
+<img src="images/42.png" width="300" height="300">  <img src="images/43.png" width="300" height="300">     <img src="images/44.png" width="300" height="300">
 
 Figure 8.f : Density plot of angular velocity walking upstairs. Each column corresponds to one coordinate (X,Y, and Z from left to right).
 
