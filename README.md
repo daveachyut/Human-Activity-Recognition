@@ -19,9 +19,9 @@ smartphone with respect to the direction of the gravitational force.
 Figure 1.a : Density plot of the linear acceleration while lying down. Each column corresponds to one coordinate (X,Y, and Z from left to right).
 
      
-![](images/4.png)
-![](images/5.png)
-![](images/6.png)
+![](images/4.png =250x250)
+![](images/5.png =250x250)
+![](images/6.png =250x250)
 Figure 1.b : Density plot of the linear acceleration while walking up. Each column corresponds to one coordinate (X,Y, and Z from left to
 right).
 
