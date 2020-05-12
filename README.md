@@ -16,7 +16,7 @@ smartphone with respect to the direction of the gravitational force.
      
 ![](images/1.png =300x250)
 
-![image](src - "images/2.png" width = "200" height = "200")
+<img src="images/2.png" width="200" height="200">
 
 ![image](src - "images/3.png" width = "200" height = "200")
 
