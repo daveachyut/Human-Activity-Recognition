@@ -15,7 +15,9 @@ gravity, the accelerometer is measuring the earth gravity. The component affecte
 smartphone with respect to the direction of the gravitational force.
      
 ![image](src - "images/1.png" width = "200" height = "200")
+
 ![image](src - "images/2.png" width = "200" height = "200")
+
 ![image](src - "images/3.png" width = "200" height = "200")
 
 Figure 1.a : Density plot of the linear acceleration while lying down. Each column corresponds to one coordinate (X,Y, and Z from left to right).
