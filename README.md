@@ -301,7 +301,7 @@ Construct the 1407561 matrixAformed by extracting from Xtrain the rows of 561 fe
 10. Compute the principal component analysis of the matrix A. You will center and sphere the data. Plot the percentage of the residual variance as a function of the number of components (see Fig. 9.a).
 
  
-![](images/26.png)
+![](images/45.png)
 
 Figure 9.a: Percentage of the residual variance explained by the first principal components during the activity WALKING_UPSTAIRS.
 
@@ -309,7 +309,7 @@ Figure 9.a: Percentage of the residual variance explained by the first principal
 
  
 
-![](images/26.png)
+![](images/46.png)
 
 Figure 10.a: Projections on the first three components of the vector of 561 observations associated with the activity WALKING_UPSTAIRS.
 
@@ -318,13 +318,13 @@ which the subjects are lying horizontally (see Fig. 9.b and Fig. 10.b).
 
  
 
-![](images/26.png)
+![](images/47.png)
 
 Figure 9.b: Percentage of the residual variance explained by the first principal components during the activity LAYING.
 
  
 
-![](images/26.png)
+![](images/48.png)
 
 Figure 10.b: Projections on the first three components of the vector of 561 observations associated with the activity LAYING.
 
@@ -336,7 +336,7 @@ Perform the principal component analysis of the matrix Xtrain. You will center a
 
  
 
-![](images/26.png)
+![](images/49.png)
 
 Figure 11: The percentage of the residual variance as a function of the number of components for the points in Xtrain.
 
@@ -349,19 +349,19 @@ The lowest number of components that can explain 90% of the variance in the data
 
  
 
-![](images/26.png)
+![](images/50.png)
 
 Figure 12.a: The points in the matrix Xtrain in the basis formed by the eigenvectors.
 
  
 
-![](images/26.png)
+![](images/51.png)
 
 Figure 12.b: N = 7, 352 observations of Xtrain plotted with vectors of linear body acceleration 􀀀! a ¹tº.
 
  
 
-![](images/26.png)
+![](images/52.png)
 
 Figure 12.c: N = 7, 352 observations of Xtrain plotted with vectors of angular velocity 􀀀! g ¹tº.
 
@@ -492,7 +492,7 @@ Table 2.f: Confusion matrix using logistic regression on the first k  = 20 princ
 
  
 
-![](images/26.png)
+![](images/53.png)
 
 Figure 13: Number of Principal Components vs accuracy for logistic regression model.
 
@@ -614,7 +614,7 @@ Table 3.f: Confusion matrix using quadratic discriminative analysis on the first
 
  
 
-![](images/26.png)
+![](images/54.png)
 
 Figure 14: Number of Principal Components vs accuracy for quadratic discriminative analysis model.
 
@@ -736,6 +736,6 @@ Table 4.f: Confusion matrix using feed forward neural network on the first k  = 
 
  
 
-![](images/26.png)
+![](images/55.png)
 
 Figure 15: Number of Principal Components vs accuracy for feed forward neural network model.
