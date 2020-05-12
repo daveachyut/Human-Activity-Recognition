@@ -301,12 +301,15 @@ Construct the 1407561 matrixAformed by extracting from Xtrain the rows of 561 fe
 10. Compute the principal component analysis of the matrix A. You will center and sphere the data. Plot the percentage of the residual variance as a function of the number of components (see Fig. 9.a).
 
  
+![](images/26.png)
 
 Figure 9.a: Percentage of the residual variance explained by the first principal components during the activity WALKING_UPSTAIRS.
 
 11. Display the points in the matrix A in the basis formed by the eigenvectors (see Fig. 10.a).
 
  
+
+![](images/26.png)
 
 Figure 10.a: Projections on the first three components of the vector of 561 observations associated with the activity WALKING_UPSTAIRS.
 
@@ -315,9 +318,13 @@ which the subjects are lying horizontally (see Fig. 9.b and Fig. 10.b).
 
  
 
+![](images/26.png)
+
 Figure 9.b: Percentage of the residual variance explained by the first principal components during the activity LAYING.
 
  
+
+![](images/26.png)
 
 Figure 10.b: Projections on the first three components of the vector of 561 observations associated with the activity LAYING.
 
@@ -325,32 +332,40 @@ Figure 10.b: Projections on the first three components of the vector of 561 obse
 We now revisit the question of understanding the geometry of the point cloud formed by the training data stacked in the matrix Xtrain.
 Assignment [50 = 20 + 10 + 20]
 Perform the principal component analysis of the matrix Xtrain. You will center and sphere the data.
-13. Plot the percentage of the residual variance as a function of the number of components (see Fig. 3).
+13. Plot the percentage of the residual variance as a function of the number of components (see Fig. 11).
 
  
 
-Figure 3: The percentage of the residual variance as a function of the number of components for the points in Xtrain.
+![](images/26.png)
+
+Figure 11: The percentage of the residual variance as a function of the number of components for the points in Xtrain.
 
 14. Find the lowest number of components that can explain 90% of the variance in the data. You will
 save this set of vectors, as you will project the test data onto them.
 
 The lowest number of components that can explain 90% of the variance in the data is 75.
 
-15. Display the points in the matrix Xtrain in the basis formed by the eigenvectors (see Fig. 4.a). The points need to be color-coded by activity. Compare the scatter plots in Fig. 4.a, Fig.4.b, and Fig. 4.c, and comment.
+15. Display the points in the matrix Xtrain in the basis formed by the eigenvectors (see Fig. 12.a). The points need to be color-coded by activity. Compare the scatter plots in Fig. 12.a, Fig.12.b, and Fig. 12.c, and comment.
 
  
 
-Figure 4.a: The points in the matrix Xtrain in the basis formed by the eigenvectors.
+![](images/26.png)
+
+Figure 12.a: The points in the matrix Xtrain in the basis formed by the eigenvectors.
 
  
 
-Figure 4.b: N = 7, 352 observations of Xtrain plotted with vectors of linear body acceleration 􀀀! a ¹tº.
+![](images/26.png)
+
+Figure 12.b: N = 7, 352 observations of Xtrain plotted with vectors of linear body acceleration 􀀀! a ¹tº.
 
  
 
-Figure 4.c: N = 7, 352 observations of Xtrain plotted with vectors of angular velocity 􀀀! g ¹tº.
+![](images/26.png)
 
-The scatterplot after PCA (Figure 4.a) differs in two aspects (with respect to Figure 4.b and Figure 4.c):
+Figure 12.c: N = 7, 352 observations of Xtrain plotted with vectors of angular velocity 􀀀! g ¹tº.
+
+The scatterplot after PCA (Figure 12.a) differs in two aspects (with respect to Figure 12.b and Figure 12.c):
 1. the data corresponding to each group is clustered better within the cluster. Due to this differentiating between clusters is easier.
 2. Different clusters have different mean values, so that most of them do not overlap.
 
@@ -477,7 +492,9 @@ Table 2.f: Confusion matrix using logistic regression on the first k  = 20 princ
 
  
 
-Figure 11: Number of Principal Components vs accuracy for logistic regression model.
+![](images/26.png)
+
+Figure 13: Number of Principal Components vs accuracy for logistic regression model.
 
 8.3 Quadratic Discriminant Analysis
 We propose to classify the activities using quadratic discriminant analysis (see problem set 3, and the solution provided on Canvas).
@@ -597,7 +614,9 @@ Table 3.f: Confusion matrix using quadratic discriminative analysis on the first
 
  
 
-Figure 12: Number of Principal Components vs accuracy for quadratic discriminative analysis model.
+![](images/26.png)
+
+Figure 14: Number of Principal Components vs accuracy for quadratic discriminative analysis model.
 
 8.4 Feed forward Neural Networks
 Finally, we propose to use a feed forward neural network with one hidden layer to classify the activities.
@@ -717,4 +736,6 @@ Table 4.f: Confusion matrix using feed forward neural network on the first k  = 
 
  
 
-Figure 13: Number of Principal Components vs accuracy for feed forward neural network model.
+![](images/26.png)
+
+Figure 15: Number of Principal Components vs accuracy for feed forward neural network model.
