@@ -14,7 +14,7 @@ You will notice that while the subject is resting in a horizontal position, the 
 gravity, the accelerometer is measuring the earth gravity. The component affected by gravity are related to the orientation of the
 smartphone with respect to the direction of the gravitational force.
      
-![image](images/1.png =300*250)
+![](images/1.png =300*250)
 
 ![image](src - "images/2.png" width = "200" height = "200")
 
