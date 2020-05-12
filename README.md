@@ -14,11 +14,7 @@ You will notice that while the subject is resting in a horizontal position, the 
 gravity, the accelerometer is measuring the earth gravity. The component affected by gravity are related to the orientation of the
 smartphone with respect to the direction of the gravitational force.
      
-![](images/1.png =300x250)
-
-<img src="images/2.png" width="200" height="200">
-
-![image](src - "images/3.png" width = "200" height = "200")
+<img src="images/1.png" width="250" height="250"> <img src="images/2.png" width="250" height="250"> <img src="images/3.png" width="250" height="250">
 
 Figure 1.a : Density plot of the linear acceleration while lying down. Each column corresponds to one coordinate (X,Y, and Z from left to right).
 
