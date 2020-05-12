@@ -366,8 +366,10 @@ Assignment [ 70 = 4 15 + 10]
 projection of the training data on the first k principal components. Apply the classifier on the test data, and compute the confusion matrix to report the number of activities in class i that were classified as class j (see Table 2.)
 
 k_1 = 30
+
 > accuracy_1
 [1] 89.10757
+
 > Confuse_1
 
 |   1        |   2        |   3        |   4        |   5        |   6|
@@ -382,8 +384,10 @@ k_1 = 30
 Table 2.a: Confusion matrix using logistic regression on the first k   30 principal components.
 
 k_2 = 40
+
 > accuracy_2
 [1] 90.22735
+
 > Confuse_2
 
 |   1        |   2        |   3        |   4        |   5        |   6|
@@ -398,8 +402,10 @@ k_2 = 40
 Table 2.b: Confusion matrix using logistic regression on the first k  = 40 principal components.
 
 k_3 = 50
+
 > accuracy_3
 [1] 91.3132
+
 > Confuse_3
 
 |   1        |   2        |   3        |   4        |   5        |   6|
@@ -414,8 +420,10 @@ k_3 = 50
 Table 2.c: Confusion matrix using logistic regression on the first k  = 50 principal components.
 
 k_4 = 60
+
 > accuracy_4
 [1] 91.5168
+
 > Confuse_4
 
 |   1        |   2        |   3        |   4        |   5        |   6|
@@ -430,8 +438,10 @@ k_4 = 60
 Table 2.d: Confusion matrix using logistic regression on the first k  = 60 principal components.
 
 k_5 = 70
+
 > accuracy_5
 [1] 92.56871
+
 > Confuse_5
 
 |   1        |   2        |   3        |   4        |   5        |   6|
@@ -446,8 +456,10 @@ k_5 = 70
 Table 2.e: Confusion matrix using logistic regression on the first k  = 70 principal components.
 
 k_6 = 20
+
 > accuracy_6
 [1] 87.1734
+
 > Confuse_6
 
 |   1        |   2        |   3         |   4        |   5        |   6|
@@ -474,8 +486,10 @@ Assignment [ 70 = 4 15 + 10]
 analysis using the projections of the training data on the first k principal components. Apply the classifier on the test data, and compute the confusion matrix to report the number of activities in class i that were classified as class j (see Table 3.)
 
 k_1 = 30
+
 > accuracy_1
 [1] 86.83407
+
 > Confuse_1
 
 |   1        |   2        |   3         |   4        |   5        |   6|
@@ -490,8 +504,10 @@ k_1 = 30
 Table 3.a: Confusion matrix using quadratic discriminative analysis on the first k  = 30 principal components.
 
 k_2 = 40
+
 > accuracy_2
 [1] 87.34306
+
 > Confuse_2
 
 |   1        |   2        |   3         |   4        |   5            |   6|
@@ -506,8 +522,10 @@ k_2 = 40
 Table 3.b: Confusion matrix using quadratic discriminative analysis on the first k  = 40 principal components.
 
 k_3 = 50
+
 > accuracy_3
 [1] 88.25925
+
 > Confuse_3
 
 |   1        |   2        |   3         |   4        |   5        |   6|
@@ -522,8 +540,10 @@ k_3 = 50
 Table 3.c: Confusion matrix using quadratic discriminative analysis on the first k  = 50 principal components.
 
 k_4 = 60
+
 > accuracy_4
 [1] 89.37903
+
 > Confuse_4
 
 |   1        |   2        |   3         |   4        |   5        |   6|
@@ -538,8 +558,10 @@ k_4 = 60
 Table 3.d: Confusion matrix using quadratic discriminative analysis on the first k  = 60 principal components.
 
 k_5 = 70
+
 > accuracy_5
 [1] 90.60061
+
 > Confuse_5
 
 |   1        |   2        |   3         |   4        |   5            |   6|
@@ -554,8 +576,10 @@ k_5 = 70
 Table 3.e: Confusion matrix using quadratic discriminative analysis on the first k  = 70 principal components.
 
 k_6 = 20
+
 > accuracy_6
 [1] 86.32508
+
 > Confuse_6
 
 |   1        |   2        |   3         |   4        |   5        |   6|
@@ -582,8 +606,10 @@ Assignment [ 70 = 4 15 + 10]
 The classification results reported in Table 4 were obtained using 10 hidden units and a regularization (weight decay) parameter    0.01. You may explore other values to get a better performance.
 
 k_1 = 30
+
 > accuracy_1
 [1] 86.39294
+
 > Confuse_1
 
 |   1        |   2        |   3        |   4        |   5        |   6|
@@ -598,8 +624,10 @@ k_1 = 30
 Table 4.a: Confusion matrix using feed forward neural network on the first k  = 30 principal components.
 
 k_2 = 40
+
 > accuracy_2
 [1] 87.00373
+
 > Confuse_2
 
 |   1        |   2        |   3        |   4        |   5             |   6|
@@ -614,8 +642,10 @@ k_2 = 40
 Table 4.b: Confusion matrix using feed forward neural network on the first k  = 40 principal components.
 
 k_3 = 50
+
 > accuracy_3
 [1] 86.15541
+
 > Confuse_3
 
 |   1        |   2         |   3        |   4        |   5        |   6|
@@ -630,8 +660,10 @@ k_3 = 50
 Table 4.c: Confusion matrix using feed forward neural network on the first k  = 50 principal components.
 
 k_4 = 60
+
 > accuracy_4
 [1] 88.25925
+
 > Confuse_4
 
 |   1        |   2        |   3        |   4        |   5        |   6|
@@ -646,8 +678,10 @@ k_4 = 60
 Table 4.d: Confusion matrix using feed forward neural network on the first k  = 60 principal components.
 
 k_5 = 70
+
 > accuracy_5
 [1] 90. 19342
+
 > Confuse_5
 
 |   1        |   2        |   3         |   4        |   5            |   6|
@@ -662,8 +696,10 @@ k_5 = 70
 Table 4.e: Confusion matrix using feed forward neural network on the first k  = 70 principal components.
 
 k_6 = 20
+
 > accuracy_6
 [1] 87.30913
+
 > Confuse_6
 
 |   1        |   2        |   3         |   4        |   5        |   6|
